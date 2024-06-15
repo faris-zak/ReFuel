@@ -1,0 +1,330 @@
+*{
+    text-decoration: none;
+    font-family: 'Tajawal';
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+    background-color: #e8e1d9;
+}
+
+div.largeScreen{
+    display: none;
+}
+
+nav.navBar{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav.navBar div.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+nav.navBar div.navDiv a div.img img{
+    user-select: none;
+    width: 300px;
+    padding-top: 5px;
+}
+
+nav.navBar div.navDiv a div.img img:hover{
+    transform: scale(110%);
+}
+
+nav.navBar div.navDiv a div.img img:active{
+    transform: scale(100%);
+}
+
+nav.navBar div.navDiv ul{
+    margin-left: auto;
+    padding-right: 0;
+}
+
+nav.navBar div.navDiv ul li{
+    list-style: none;
+    display: inline-block;
+    direction: rtl;
+}
+
+nav.navBar div.navDiv ul li a.site{
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+nav.navBar div.navDiv ul li a.site:hover{
+    color: #afce44;
+}
+
+nav.navBar div.navDiv ul li a.site:active{
+    color: #01188a;
+}
+
+nav.navBar div.navDiv div.dropdown{
+    display: none;
+    height: 32px;
+    width: 32px;
+    position: relative;
+}
+
+nav.navBar div.navDiv div.dropdown input.dropBtn{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav.navBar div.navDiv div.dropdown .line{
+    transition: 0.5s;
+    stroke-width: 6px;
+    stroke: black;
+}
+
+nav.navBar div.navDiv div.dropdown .lineTop{
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+}
+
+nav.navBar div.navDiv div.dropdown .lineBottom{
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+}
+
+nav.navBar div.navDiv div.dropdown .lineMid{
+    stroke-dasharray: 40 40;
+}
+
+nav.navBar div.navDiv div.dropdown input.dropBtn:checked + svg .line {
+    stroke: crimson;
+}
+
+nav.navBar div.navDiv div.dropdown input.dropBtn:checked + svg .lineTop{
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+nav.navBar div.navDiv div.dropdown input.dropBtn:checked + svg .lineMid{
+    stroke-dashoffset: 40;
+}
+
+nav.navBar div.navDiv div.dropdown input.dropBtn:checked + svg .lineBottom{
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+nav.navBar div.navDiv div.dropdown div.dropdownContent{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #e8e1d9;
+    min-width: 160px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+nav.navBar div.navDiv div.dropdown div.dropdownContent a{
+    display: block;
+    color: #01188a;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+nav.navBar div.navDiv div.dropdown div.dropdownContent a:hover{
+    border-radius: 4px;
+    color: #afce44;
+    background-color: #f1f1f1;
+}
+
+nav.navBar div.navDiv div.dropdown div.dropdownContent a:active{
+    color: #01188a;
+}
+
+a.toTop{
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    color: #afce44;
+    padding-top: 1%;
+    font-size: 2em;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    transition: opacity 0.3s;
+    background: transparent;
+}
+
+a.toTop:hover{
+    color: #01188a;
+}
+
+footer{
+    padding: 30px 0px;
+    width: 100%;
+    color: #F2F2F2;
+    font-size: 1em;
+    padding-bottom: 5px;
+    background-color: #5c5c5c;
+    border-radius: 20px 0px;
+}
+
+footer span.line, span.line-last{
+    color: #afce44;
+}
+
+footer div.contact a{
+    text-decoration: none;
+}
+
+footer div.contact a:hover{
+    color: #c3c6ce;
+}
+
+footer div.contact a i{
+    color: #afce44;
+    font-size: 28px;
+    margin: 0px 10px;
+}
+
+footer div.contact a i:hover{
+    color: #01188a;
+}
+
+footer div.quickLink ul br.newLine{
+    display: none;
+}
+
+footer div.quickLink ul{
+    width: auto;
+    padding: 0;
+}
+
+footer div.quickLink ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+footer div.quickLink ul li a{
+    color: #F2F2F2;
+}
+
+footer div.quickLink ul li a:hover{
+    color: #01188a;
+}
+
+footer div.copyright p{
+    font-size: 16px;
+    position: relative;
+
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 992px){
+
+    main, footer, nav, a{
+        display: none;
+    }
+
+    div.largeScreen{
+        user-select: none;
+        display: block;
+        padding: 32PX;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div.largeScreen img.screens{
+        width: 600px;
+        margin: 20% 0;
+        margin-bottom: 32px;
+    }
+
+    div.largeScreen span.h2{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    div.largeScreen p.detail{
+        font-size: 20px;
+        font-weight: 500;
+        color: #585858;
+    }
+}
+
+@media screen and (max-width: 991px){
+
+    nav.navBar div.navDiv a div.img img{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    nav.navBar{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav.navBar div.navDiv a div.img img{
+        width: 90px;
+    }
+
+    nav.navBar div.navDiv p.title a{
+        display: none;
+    }
+
+    nav.navBar div.navDiv ul li a.site{
+        display: none;
+    }
+
+    nav.navBar div.navDiv div.dropdown{
+        display: block;
+    }
+
+    nav.navBar div.navDiv div.dropdownContent a{
+        font-size: 17px;
+    }
+
+    a.toTop:hover{
+        color: #afce44;
+    }
+
+    a.toTop:active{
+        color: #01188a;
+    }
+
+    footer div.quickLink ul{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer div.quickLink ul span.line-last{
+        display: none;
+    }
+
+    footer div.quickLink ul br.newLine{
+        display: block;
+    }
+}

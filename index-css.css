@@ -1,0 +1,267 @@
+main section{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+main section.first-head{
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+main section.first-head img{
+    width: 100%;
+    user-select: none;
+}
+
+main section.first-head div.details{
+    margin-top: 15px;
+}
+
+main section.first-head div.details span.header{
+    margin: 0;
+    font-size: 40px;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.first-head div.details span.header span.mainWord{
+    color: #afce44;
+    font-weight: 700;
+    user-select: none;
+}
+
+main section.first-head div.details span.header span.mainWord span.hashtag{
+    color: #01188a;
+    margin-left: 5px;
+}
+
+main section.first-head div.details span.header span.mainWord:hover span.hashtag{
+    margin-left: 0;
+    font-weight: 700;
+}
+
+main section.first-head div.details p.description{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: grey;
+}
+
+main section.first-head div.details a input.discoverButton{
+    width: fit-content;
+    min-width: 100px;
+    font-size: 20px;
+    font-family: "Teshrin AR+LT Bold";
+    margin-top: 25px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #01188a;
+    box-shadow: 0px 8px 0px 0px #00000035;
+    user-select: none;
+}
+
+main section.first-head div.details a input.discoverButton:hover{
+    background-color: white;
+    box-shadow: 0px 8px 0px 0px #00000035;
+}
+
+main section.first-head div.details a input.discoverButton:active{
+    background-color: #01188a;
+    color: #F2F2F2;
+    transform: scale(0.95);
+    box-shadow: 0px 8px 20px 0px #01188a35;
+}
+
+main section.first-body{
+    padding: 17px;
+    margin: 0;
+    margin-bottom: 70px;
+    border-radius: 20px 0px;
+    background-color: #5c5c5c;
+}
+
+main section.first-body div.details span.header{
+    margin: 0;
+    font-size: 32px;
+    color: #afce44;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.first-body div.details p.description{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #F2F2F2;
+}
+
+main section.second-body{
+    padding: 17px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+main section.second-body div.details span.header{
+    margin: 0;
+    font-size: 40px;
+    color: #01188a;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.second-body div.details div.image-slider{
+    width: auto;
+    margin-top: 30px;
+    height: 280px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+}
+
+main section.second-body div.details div.image-slider div.image-container{
+    display: flex;
+}
+
+main section.second-body div.details div.image-slider div.image-container img{
+    width: auto;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 20px;
+    padding: 0;
+    user-select: none;
+    transition: opacity 0.6s;
+}
+
+main section.second-body div.details div.image-slider div.image-container:hover > :not(:hover){
+    opacity: 0.4;
+}
+
+main section.third-body{
+    padding: 17px;
+    margin: 0;
+    margin-bottom: 70px;
+    border-radius: 0px 20px;
+    background-color: #5c5c5c;
+}
+
+main section.third-body div.details span.header{
+    margin: 0;
+    font-size: 32px;
+    color: #afce44;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.third-body div.details p.description{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #F2F2F2;
+}
+
+main section.third-body div.details div.userDetails div.form-group{
+    margin-bottom: 15px;
+}
+  
+main section.third-body div.details div.userDetails form div.form-group input[type="text"],
+main section.third-body div.details div.userDetails form div.form-group input[type="email"],
+main section.third-body div.details div.userDetails form div.form-group input[type="tel"],
+main section.third-body div.details div.userDetails form div.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+main section.third-body div.details div.userDetails form button{
+    width: fit-content;
+    min-width: 100px;
+    font-size: 18px;
+    font-family: "Teshrin AR+LT Bold";
+    margin-top: 25px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #01188a;
+    user-select: none;
+}
+  
+main section.third-body div.details div.userDetails form button:hover{
+    background-color: #01188a;
+    color: #F2F2F2;
+}
+
+main section.third-body div.details div.userDetails form button:active{
+    transform: scale(0.95);
+}
+
+main section.fourth-body{
+    padding: 17px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+main section.fourth-body div.details span.header{
+    margin: 0;
+    font-size: 40px;
+    color: #01188a;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.fourth-body div.details p.description{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #afce44;
+}
+
+main section.fourth-body div.details div.contactContainer{
+    display: flex;
+}
+
+main section.fourth-body div.details div.contactContainer div.contactBox{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 30px 25px 15px;
+    border: 2px solid #5c5c5c;
+    border-radius: 6px;
+}
+
+main section.fourth-body div.details div.contactContainer div.contactBox:first-child{
+    margin-right: 0;
+}
+
+main section.fourth-body div.details div.contactContainer div.contactBox i{
+    display: block;
+    font-size: 45px;
+    color: #01188a;
+}
+
+main section.fourth-body div.details div.contactContainer div.contactBox span.contactType{
+    display: block;
+    font-size: 22px;
+    color: #000;
+    font-family: "Teshrin AR+LT Bold";
+}
+
+main section.fourth-body div.details div.contactContainer div.contactBox p.contactInfo{
+    display: block;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px){
+    
+    main section.fourth-body div.details div.contactContainer{
+        display: inline-block;
+    }
+
+    main section.fourth-body div.details div.contactContainer div.contactBox{
+        width: 80%;
+        margin-right: 0px;
+    }
+}
